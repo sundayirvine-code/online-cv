@@ -12,7 +12,7 @@
 <body>
     <nav id="nav" role="navigation">
         <div id="logo">IRVINE</div>
-        <ul id="links" role="menubar">
+        <ul id="links" role="menubar" aria-label="Navigation">
             <li role="menuitem"><a class="link" href="#">Link1</a></li>
             <li role="menuitem"><a class="link" href="#">Link2</a></li>
             <li role="menuitem"><a class="link" href="#">Link3</a></li>
@@ -23,22 +23,22 @@
         <h1>SOFTWARE ENGINEER | DEVELOPER </h1>
         <ul class="socials" role="list">
             <li role="listitem">
-                <a href="https://www.instagram.com/the_a.n.o.m.a.l.y/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+                <a href="https://www.instagram.com/the_a.n.o.m.a.l.y/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
             </li>
             <li role="listitem">
-                <a href="https://github.com/sundayirvine-code" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">Github</span></a>
+                <a href="https://github.com/sundayirvine-code" target="_blank" rel="noopener" aria-label="Github"><i class="fa-brands fa-github" aria-hidden="true"></i><span class="sr-only">Github</span></a>
             </li>
             <li role="listitem">
-                <a href="https://www.linkedin.com/in/irvine-sunday-84104119b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+                <a href="https://www.linkedin.com/in/irvine-sunday-84104119b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
             </li>
             <li role="listitem">
-                <a href="https://irvine-sunday-portfolio.vercel.app/" target="_blank" rel="noopener"><i class="fa-light fa-globe" aria-hidden="true"></i><span class="sr-only">Portfolio website</span></a>
+                <a href="https://irvine-sunday-portfolio.vercel.app/" target="_blank" rel="noopener" aria-label="Portfolio website"><i class="fa-light fa-globe" aria-hidden="true"></i><span class="sr-only">Portfolio website</span></a>
             </li>
         </ul>
     </header>
     
     <main id="main">
-        <aside id="aside1" role="complementary">
+        <section id="aside1">
             <img src="/static/images/profile.png" alt="profile picture" id="profile">
             <p id="name">Irvine Sunday</p>
             <div class="text summary">
@@ -61,8 +61,47 @@
             <div class="btn">
                 CONTACT
             </div>
-        </aside>
-        <aside id="aside2" role="complementary"></aside>
+        </section>
+        <section id="aside2" role="complementary">
+            <h1 id="experience-title">
+                <p>EXPERIENCE</p>
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </h1>
+            <div class="role-description">
+                <div class="role">
+                    <p class="company">KNEC</p>
+                    <div class="position-duration">
+                        <p class="duration">FEB 2022 - FEB 2023</p>
+                        <p class="position">INTERN</p>
+                    </div>
+                </div>
+                <p class="description">I was responsible for managing all incoming and outgoing mail, including sorting, recording, and stamping them with the appropriate date. To ensure proper organization, I classified and filed received mails into relevant subject files, and maintained up-to-date records in the council's record management system. I took measures to protect all records from loss by tracking their movement and ensuring secure storage. As part of my duties, I retrieved and provided accurate information and documents to users who made requests. Additionally, I handled user queries by answering phone calls and offering the necessary assistance. Finally, I made sure to maintain the integrity of the council's sensitive information throughout my tenure.
+                </p>
+            </div>
+            <div class="line3"></div>
+            <div class="role-description">
+                <div class="role">
+                    <p class="company">GADGETMEND LTD.</p>
+                    <div class="position-duration">
+                        <p class="duration">JAN 2021 - APR 2021</p>
+                        <p class="position">ASSISTANT</p>
+                    </div>
+                </div>
+                <p class="description">In this role, I provided support to engineers by assisting in the incorporation of their designs into AutoCAD format. I also created wire diagrams using AutoCAD and made necessary modifications to previous configurations. Furthermore, I played a key role in the implementation of a new system called Odoo, which helped ensure that the company's business operations, including sales, inventory, accounting, and human resources, ran smoothly. As part of my duties, I processed incoming goods into inventory and verified records to maintain data integrity. Additionally, I performed data entry of physical counts to update computerized inventory.</p>
+            </div>
+            <div class="line3"></div>
+            <div class="role-description">
+                <div class="role">
+                    <p class="company">SAFARICOM SHOP.</p>
+                    <div class="position-duration">
+                        <p class="duration">JUNE 2019 - AUG 2019</p>
+                        <p class="position">ATTACHÉ</p>
+                    </div>
+                </div>
+                <p class="description">I assembled devices for customers and ensured that any applications installed on them were of good quality and functioning properly. Additionally, I provided cost estimates to customers for the purchase of devices. To guarantee that the devices were in good working order, I performed proof tests such as phone and SIM card testing and power tests. I acquired expertise and knowledge in Safaricom services such as M-pesa and Jitambulishe to ensure the consistent delivery of outstanding services. I kept myself up-to-date on the latest telecommunication developments by attending training. To deliver an exceptional level of service to each customer, I listened to their concerns and answered their questions.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>

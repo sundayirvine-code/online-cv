@@ -19,15 +19,17 @@ body {
 #header,
 #main {
   margin-top: 30px;
-  grid-column: 2/12;
+  grid-column: 1/13;
+  margin: 0 120px;
 }
 
 #nav {
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #logo {
@@ -89,14 +91,65 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-top: 60px;
 }
 
 #header h1{
   font-size: 2.3em;
   font-weight: 400;
   letter-spacing: -0.04em;
+  word-break: break-word;
 }
 
 #main {
-  height: 650px;
+  height: auto;
+  margin-top: 50px;
+  display: flex;
 }
+
+#aside1{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: flex-start;
+  width: 30%;
+  max-width: 30%;
+}
+
+#profile{
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  flex: none;
+  height: 215px;
+  transition-delay: 300ms;
+  transition-duration: 1000ms;
+  max-width: 100%;
+}
+
+#name{
+  color: #000000;
+  font-size: 17px;
+  font-weight: 600;
+  height: auto;
+  line-height: 1.4;
+  margin: 20px 0px 0px 0px;
+  width: auto;
+  max-width: 100%;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.summary{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: 1.6;
+  margin: 35px 0px 0px 0px;
+  padding: 0px 0px 0px;
+  width: 600px;
+  max-width: 100%;
+}
+

@@ -301,10 +301,9 @@ body {
 .time,
 .level{
   place-self: start;
-  font-size: 10px;
 }
-.time{
-  font-size: 12px;
+.level{
+  font-size: 10px;
 }
 
 .description{
@@ -344,7 +343,15 @@ body {
   margin-right: 20px;
 }
 
-#edu-title{
+#skills{
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+.edu-title{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -352,7 +359,7 @@ body {
   margin-bottom: 30px;
 }
 
-#edu-title p{
+.edu-title p{
   color: #000000;
   font-family: 'Be Vietnam Pro';
   font-size: 24px;
@@ -375,4 +382,50 @@ body {
   margin: 2px 0px 0px 0px;
   width: 100%;
   max-width: 100%;
+}
+
+.skill-score{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.name-score{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-name, .score {
+  font-family: 'Be Vietnam Pro';
+  font-size: 12px;
+  font-weight: 700;
+  height: auto;
+  line-height: 1.4;
+  width: auto;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  color: #000000;
+}
+
+.skill-name {
+  font-size: 14px;
+  
+}
+
+.progress, .bar{
+  width: 100%;
+}
+
+.bar{
+  align-items: flex-start;
+  background: #EEEEEE;
+  height: 3px;
+  margin: 20px 0px 0px 0px;
+  max-width: 100%;
+}
+
+.bar div{
+  background: #000000;
+  height: 100%;
 }

@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   color: #333;
-  font-family: sans-serif;
+  font-family: 'Be Vietnam Pro',sans-serif;
   line-height: 1;
 }
 
@@ -240,12 +240,14 @@ body {
   background-color: #000;
 }
 
-.role-description{
+.role-description,
+.education-description{
   display: flex;
   flex-direction: column;
 }
 
-.company{
+.company,
+.institution{
   font-size: 18px;
   font-weight: 700;
   height: auto;
@@ -254,7 +256,12 @@ body {
   color: #000000;
 }
 
-.role{
+.institution{
+  font-size: 12px;
+}
+
+.role,
+.level-time{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -262,40 +269,110 @@ body {
   max-width: 100%;
 }
 
-.position-duration{
+.level-time{
+  flex-direction: row-reverse;
+}
+
+.position-duration,
+.timeline{
   display: flex;
   flex-direction: column;
   align-items: end;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .duration,
-.position{
+.position,
+.time,
+.level{
   color: #000000;
-    font-family: var(--s-font-ecbb00d0);
-    font-size: 12px;
-    font-weight: 700;
-    height: auto;
-    line-height: 1.4;
-    width: auto;
-    max-width: 100%;
+  font-family: 'Be Vietnam Pro';
+  font-size: 12px;
+  font-weight: 700;
+  height: auto;
+  line-height: 1.4;
+  width: auto;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.time,
+.level{
+  place-self: start;
+  font-size: 10px;
+}
+.time{
+  font-size: 12px;
 }
 
 .description{
   color: rgba(0, 0, 0, 0.6);
-    font-family: 'Be Vietnam Pro';
-    font-size: 14px;
-    font-weight: 400;
-    height: auto;
-    line-height: 1.6;
-    margin: 20px 0px 0px 0px;
-    width: 100%;
-    max-width: 100%;
+  font-family: 'Be Vietnam Pro';
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: 1.6;
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .line3{
   background: rgba(0, 0, 0, 0.1);
   height: 1px;
   margin: 30px 0px 30px 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+#education-skills{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#education{
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  max-width: calc(50% - 20px);
+  margin-right: 20px;
+}
+
+#edu-title{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+#edu-title p{
+  color: #000000;
+  font-family: 'Be Vietnam Pro';
+  font-size: 24px;
+  font-weight: 700;
+  height: auto;
+  line-height: 1.4;
+  margin: 0px 0px 10px 0px;
+}
+
+.eduline1{
+  background: #000000;
+  height: 2px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.eduline2{
+  background: #000000;
+  height: 4px;
+  margin: 2px 0px 0px 0px;
   width: 100%;
   max-width: 100%;
 }
